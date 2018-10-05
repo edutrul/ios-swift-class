@@ -22,7 +22,15 @@ class ViewController: UIViewController {
     @IBAction func login(_ sender: Any) {
         print("Trying to login", " yaya");
         let email: String = txtEmail.text!;
+        let password: String = txtPassword.text!;
         print(email);
+        
+        if (email == "edu" && password == "123") {
+            txtOutput.text = "Bienvenido \(email)";
+        }
+        else {
+            txtOutput.text = "Usuario incorrecto";
+        }
     }
     
     
