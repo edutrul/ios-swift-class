@@ -9,9 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+    var friendName: String?
+    
+    @IBOutlet weak var txtEmail: UITextField!
+    
+    @IBOutlet weak var txtPassword: UITextField!
+    
+    @IBOutlet weak var txtOutput: UITextView!
+    
+    @IBOutlet weak var imgPhoto: UIImageView!
+    
+    @IBAction func login(_ sender: Any) {
+        print("Trying to login", " yaya");
+        let email: String = txtEmail.text!;
+        print(email);
+    }
+    
+    
+    override func viewDidLoad () {
         super.viewDidLoad()
+        friendName = "Eduardo";
+        print(friendName);
+        txtOutput.text = ""
         // Do any additional setup after loading the view, typically from a nib.
     }
 
